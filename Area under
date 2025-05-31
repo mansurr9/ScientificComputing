@@ -1,0 +1,13 @@
+import numpy as np
+n = 100
+dx = dy = 1 / n
+volume = 0
+
+for i in range(n):
+    for j in range(n):
+        x = i * dx
+        y = j * dy
+        z = x**2 + y**2
+        volume += z * dx * dy
+
+print(f"Approximate volume: {volume}")
